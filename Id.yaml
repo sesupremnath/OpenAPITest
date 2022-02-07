@@ -1,0 +1,20 @@
+openapi: 3.0.0
+info:
+  title: idx3
+  version: '1.0'
+servers:
+  - url: 'http://localhost:3000'
+paths: {}
+components:
+  schemas:
+    Id:
+      title: Id
+      type: object
+      description: Id Object to represent entity ID and external Id
+      properties:
+        id:
+          type: string
+          description: Entity Id
+        externalId:
+          type: string
+          description: External Id provided by provider
